@@ -1,0 +1,30 @@
+Introduction
+============
+
+This program attempts to emulate a Snakes and Ladders game, for 2-4 people. The number of people are randomly chosen between 2-4 (inclusive). It is defined by the variable "numberOfPlayers" in the main.java file.
+
+All checks are placed in the main.java file, which take help from the methods implemented in the Board.java file, which is emulates a board, and the players.
+
+Player.java is a class which defines the attributes of a player, namely their name, current score, and a boolean status (which tells if the player is blocked or not).
+
+Dice.java implements the functionality of a dice, randomly generating numbers between 1-6 (inclusive).
+
+Novelity in Approach
+====================
+
+The code tries to follow OOP, wherein each object in the game is represented by a class in Java. It implements native data structures such as Lists<>.
+
+How to Run the Application
+==========================
+
+There are 4 files in the src/ directory:
+
+- main.java
+- Board.java
+- Player.java
+- Dice.java
+
+Compile all using "javac main.java Board.java Player.java Dice.java".
+Run "java main.java" to start the application. Since the application is automatic and requires no user input, it will run until any player reaches the 100th position.
+
+The application runs 100 times, and displays the avg. number of rounds, maximum number of rounds, and minimum number of rounds. A round is completed once every player has had a turn exactly one time (excluding the re-runs for sixes and ladders).
